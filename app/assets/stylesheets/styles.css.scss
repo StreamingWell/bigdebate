@@ -1,0 +1,24 @@
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+
+	margin-top: 50px;
+	color: $grayLight;
+	text-align: center;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.well {
+		text-align: center;
+}
