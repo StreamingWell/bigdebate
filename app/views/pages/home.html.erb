@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+ Show Videos
+<% else %>
+
 <div class="well">
 	<h1>Welcome to the The Big Debate</h1>
 		<h3> 
@@ -5,6 +9,7 @@
 				<%= link_to "2013 Lugano conference.", "#" %>
 		</h3>
 		<p>
-			<%= link_to "Login", "#", class: "btn btn-success btn-large" %>
+			<%= link_to "Login", new_user_registration_path, class: "btn btn-success btn-large" %>
 		</p>
 </div>
+<% end %>
