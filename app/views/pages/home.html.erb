@@ -12,14 +12,19 @@
 
 <% else %>
 
-<div class="well">
-	<h1>Welcome to the The Big Debate</h1>
-		<h3> 
-			You've found the highlights of the 
-				<%= link_to "2013 Lugano conference.", "#" %>
-		</h3>
-		<p>
-			<%= link_to "Login", new_user_registration_path, class: "btn btn-success btn-large" %>
-		</p>
+
+		<div class="jumbotron">
+			<img src="/assets/big-debate.png"/>
+			<h1>Welcome to the The Big Debate</h1>
+			<h3> You've found the highlights of the 2013 Lugano conference.</h3>
+			<hr>
+			<%= simple_form_for("user", :url => new_user_session_path) do |f| %>
+			  <%= f.text_field :username %>
+			  <br>
+			  <%= f.password_field :password %>
+			  <br>
+			  <%= f.submit 'Sign in', class: 'btn btn-success btn-large' %>
+
+<% end %>
 </div>
 <% end %>
