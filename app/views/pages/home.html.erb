@@ -19,9 +19,9 @@
 			<h3> You've found the highlights of the 2013 Lugano conference.</h3>
 			<hr>
 			<%= simple_form_for("user", :url => new_user_session_path) do |f| %>
-			  <%= f.text_field :username %>
+			  <%= f.text_field :username, placeholder: 'Username' %>
 			  <br>
-			  <%= f.password_field :password %>
+			  <%= f.password_field :password, placeholder: 'Password' %> 
 			  <br>
 			  <%= f.submit 'Sign in', class: 'btn btn-success btn-large' %>
 
